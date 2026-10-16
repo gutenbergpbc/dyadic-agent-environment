@@ -1,0 +1,20 @@
+[project]
+name = "multiagent-workplace"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["inspect-ai==0.3.268", "inspect-petri==3.1.0", "httpx==0.28.1", "jsonschema==4.26.0", "boto3==1.43.106"]
+[project.optional-dependencies]
+test = ["pytest==9.1.1", "ruff==0.16.9"]
+[project.scripts]
+workplace = "workplace.runner:main"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools]
+packages = ["workplace"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[tool.ruff.lint]
+# Broad catches at experiment boundaries preserve execution failures as evidence.
+ignore = ["BLE001", "SIM115", "C408"]

@@ -1,0 +1,197 @@
+[
+  {
+    "path": "404.html",
+    "sha256": "c7bbd5931965e6f39c9a60236919f02f348b88d8209e26165b5c7b4de57110a2",
+    "bytes": 222
+  },
+  {
+    "path": "_headers",
+    "sha256": "0b5c461a6b295a59bc95b5d88dde023b5595ce251103f28e1420d6c51d74cd18",
+    "bytes": 324
+  },
+  {
+    "path": "app.js",
+    "sha256": "956a906e7f2420c3d9127e11169e654cf4d4ca7e933419f8768353dea6eeac30",
+    "bytes": 1218
+  },
+  {
+    "path": "index.html",
+    "sha256": "f9a9b9b34278b2f342eddfb47d6cc0b6393e94a73a9c5f95986243308279f1d2",
+    "bytes": 1107
+  },
+  {
+    "path": "interactions.js",
+    "sha256": "6e3bb538e562a6f89e8f00acb32f5be772c9843098d22c8fffa165c9404ed129",
+    "bytes": 17058
+  },
+  {
+    "path": "method-panels.js",
+    "sha256": "84552ba7815f75b4b7b9f2e6784ac9f8643229938cd85de39ad1163afa8f0f50",
+    "bytes": 6677
+  },
+  {
+    "path": "presentation.css",
+    "sha256": "59f7a1824eb4b73aca1cdfbd9f4dd65b041fcf96f90a3cc69caec8457c62933d",
+    "bytes": 16224
+  },
+  {
+    "path": "results.json",
+    "sha256": "622cdcc92230c7771f0b49f88635be8c302c30b13399cb8b3e455b18849dc837",
+    "bytes": 2191810
+  },
+  {
+    "path": "standalone.css",
+    "sha256": "1dd7e06fa43f98cbd8d8b3b39fe3bfc1550e0e930d9b826724a4d2edb79bb877",
+    "bytes": 398
+  },
+  {
+    "path": "styles.css",
+    "sha256": "b4f9f4f47d3b8ff6ee3b88d270c8f2eb27565860dafdab4ffb60b327507ecbe1",
+    "bytes": 21010
+  },
+  {
+    "path": "typography.css",
+    "sha256": "df9fdb3256dca0bc8abd1db17e8b20dcef3f1647a6b7ac69b389c9f30ddafb4e",
+    "bytes": 2703
+  },
+  {
+    "path": "vendor/fonts/dm-sans-0.ttf",
+    "sha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+    "bytes": 48280
+  },
+  {
+    "path": "vendor/fonts/dm-sans-1.ttf",
+    "sha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+    "bytes": 48308
+  },
+  {
+    "path": "vendor/fonts/dm-sans-2.ttf",
+    "sha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+    "bytes": 48280
+  },
+  {
+    "path": "vendor/fonts/dm-sans-3.ttf",
+    "sha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+    "bytes": 48200
+  },
+  {
+    "path": "vendor/fonts.css",
+    "sha256": "533ebc59e2e7e82fc86f2bbb6d9cb4ee00e549e3dddfe8ae5d4247e66f0a6607",
+    "bytes": 636
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_AMS-Regular.woff2",
+    "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+    "bytes": 28076
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2",
+    "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+    "bytes": 6912
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2",
+    "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+    "bytes": 6908
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2",
+    "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+    "bytes": 11348
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2",
+    "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+    "bytes": 11316
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Main-Bold.woff2",
+    "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+    "bytes": 25324
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2",
+    "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+    "bytes": 16780
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Main-Italic.woff2",
+    "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+    "bytes": 16988
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Main-Regular.woff2",
+    "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+    "bytes": 26272
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2",
+    "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+    "bytes": 16400
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Math-Italic.woff2",
+    "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+    "bytes": 16440
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2",
+    "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+    "bytes": 12216
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2",
+    "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+    "bytes": 12028
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2",
+    "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+    "bytes": 10344
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Script-Regular.woff2",
+    "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+    "bytes": 9644
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Size1-Regular.woff2",
+    "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+    "bytes": 5468
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Size2-Regular.woff2",
+    "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+    "bytes": 5208
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Size3-Regular.woff2",
+    "sha256": "73d591271b1604960cb10bb90fee021670af7297017e0e98480b332d11f51995",
+    "bytes": 3624
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Size4-Regular.woff2",
+    "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+    "bytes": 4928
+  },
+  {
+    "path": "vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2",
+    "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+    "bytes": 13568
+  },
+  {
+    "path": "vendor/katex/katex.min.css",
+    "sha256": "7ff37df30049853f971e77bafdd8d429f19b983c1207d47144931b756c31932f",
+    "bytes": 20460
+  },
+  {
+    "path": "vendor/katex/katex.mjs",
+    "sha256": "7af1aa5e484a4ae881e181ff97ddffdce2deabef42596d2679658b9fe4cd4615",
+    "bytes": 610145
+  },
+  {
+    "path": "view.json",
+    "sha256": "09463d3bfc06057593945c474a6415cdbdbd227e6cf4b7d889e1f175c3f3b093",
+    "bytes": 22519
+  }
+]

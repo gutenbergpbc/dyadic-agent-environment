@@ -1,0 +1,49 @@
+
+/* Shared by every published document, including embedded research artifacts. */
+:root { --font-reading: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif; }
+*, *::before, *::after { font-family: var(--font-reading) !important; }
+body { font-size: 1rem; line-height: 1.7; }
+h1, h2, h3, h4 { line-height: 1.2; letter-spacing: -.025em; font-weight: 600; overflow-wrap: anywhere; }
+h1 { font-size: clamp(2.5rem, 6vw, 5rem); }
+h1 em { font-weight: inherit; }
+.hero h1, .project-heading h1, .entry-heading h1, .week-heading h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1.12;
+}
+.hero { grid-template-columns: .55fr 1.55fr .9fr; }
+.hero h1, .project-heading h1, .entry-heading h1 { min-width: 0; }
+.project-card h2 { font-size: 2rem; }
+.hermeneutics-week h2, .week-card h2, .chart-card h2 { font-size: clamp(1.5rem, 3vw, 2.5rem); line-height: 1.25; }
+.hermeneutics-week a { font-size: clamp(1.25rem, 2.5vw, 1.75rem); line-height: 1.4; }
+.experiment-copy strong { font-size: clamp(1.5rem, 3vw, 2.25rem); line-height: 1.3; }
+.summary, .update-copy, .sales-entry p, .sales-entry dd, .sales-entry li,
+.e2-chart p, .e2-notes p { font-size: 1rem; line-height: 1.75; }
+button, input, select, textarea, .back, .bar-label, .model-label,
+.chart-legend, .interaction-legend, .chart-note, .sales-entry summary,
+.sales-toolbar label, .sales-tone-label, .sales-entry select, .transcript-link {
+  font-size: .875rem;
+}
+.tooltip, .line-tooltip, .e2-tip, .e2-ablation-tip,
+.e2-status-chip, .e2-view-buttons button, .e2-trace-head, .e2-trace-component,
+.e2-ablation-legend, .e2-row, .e2-ablation-row, .e2-ablation-value,
+.e2-panel h3, .e2-ablation-facet h4, .e2-ablation-facet-head span {
+  font-size: .8125rem; line-height: 1.5;
+}
+.e2-overline, .e2-range-labels, .e2-axis, .e2-ablation-axis > div,
+.e2-trace-component::after, .e2-trace-card p, .e2-ablation-row.pending .e2-ablation-value {
+  font-size: .75rem;
+}
+.e2-ablation-row { grid-template-columns: 100px minmax(0, 1fr) 44px; min-height: 44px; }
+.e2-ablation-axis { grid-template-columns: 100px minmax(0, 1fr) 44px; }
+.e2-status-chip, .e2-trace-component { overflow-wrap: anywhere; }
+.e2-trace-component { gap: 8px; }
+pre, code { font-size: .875rem; line-height: 1.6; }
+@media (max-width: 760px) {
+  .hero { grid-template-columns: minmax(0, 1fr) 100px; }
+  .hero-scholar { width: 100%; }
+  .week-heading { display: block; }
+  .experiment-card { grid-template-columns: minmax(0, 1fr) auto; padding: 24px 20px; }
+  .experiment-index { grid-column: 1 / -1; }
+  .e2-panels { grid-template-columns: minmax(0, 1fr); }
+  .e2-control-title-row { flex-wrap: wrap; }
+  .bar-label { writing-mode: horizontal-tb; overflow-wrap: anywhere; font-size: .75rem; }
+}

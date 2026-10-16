@@ -1,0 +1,178 @@
+.dyadic-storyboard *{box-sizing:border-box}
+.dyadic-storyboard .mast{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.1em}
+.dyadic-storyboard h3{font-size:16px}
+.dyadic-storyboard .lead{max-width:770px;color:var(--muted);font-size:18px}
+.dyadic-storyboard a{color:inherit}
+.dyadic-storyboard button,.dyadic-storyboard select{font:inherit;color:var(--ink);background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:8px 12px;max-width:100%;cursor:pointer}
+.dyadic-storyboard select{min-width:0;width:100%}
+.dyadic-storyboard button:hover,.dyadic-storyboard button:focus-visible{border-color:var(--purple)}
+.dyadic-storyboard .status{display:flex;gap:20px;flex-wrap:wrap;padding:14px 0;font-size:13px}
+.dyadic-storyboard .status b{color:var(--purple)}
+.dyadic-storyboard .status .missing{border-bottom:1px dashed var(--muted)}
+.dyadic-storyboard .rail{position:sticky;top:0;background:var(--bg);z-index:4;display:flex;gap:18px;overflow-x:auto;padding:16px 0;border-bottom:1px solid var(--line);font-size:13px}
+.dyadic-storyboard .rail a{white-space:nowrap;text-decoration:none}
+.dyadic-storyboard .rail a[aria-current]{color:var(--purple);text-decoration:underline}
+.dyadic-storyboard .figure{padding:38px 0;border-bottom:1px solid var(--line);scroll-margin-top:70px}
+.dyadic-storyboard .controls{display:flex;gap:14px;flex-wrap:wrap;margin:16px 0}
+.dyadic-storyboard .controls label{display:grid;gap:4px;font-size:13px;min-width:0}
+.dyadic-storyboard .boundary,.dyadic-storyboard .caption{color:var(--muted);font-size:14px;max-width:900px}
+.dyadic-storyboard .boundary{border-left:3px solid var(--purple);padding-left:13px}
+.dyadic-storyboard .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:13px;margin:16px 0}
+.dyadic-storyboard .legend > span::before{content:attr(data-n);display:inline-grid;place-items:center;width:22px;height:22px;margin-right:5px;border:1px solid var(--purple);color:var(--purple)}
+.dyadic-storyboard .models{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.dyadic-storyboard .chart{min-width:0}
+.dyadic-storyboard .chart svg{display:block;width:100%;overflow:visible}
+.dyadic-storyboard .chart text{fill:var(--ink);font:12px system-ui}
+.dyadic-storyboard .grid{stroke:var(--line);stroke-width:1}
+.dyadic-storyboard .mock-mark{fill:var(--purple);opacity:.45}
+.dyadic-storyboard .mock-mark:focus,.dyadic-storyboard .mock-mark:hover{opacity:.95;outline:2px solid var(--ink)}
+.dyadic-storyboard .placeholder{padding:24px;border:1px dashed var(--line);margin:12px 0;color:var(--muted)}
+.dyadic-storyboard details{margin:18px 0}
+.dyadic-storyboard summary{cursor:pointer}
+.dyadic-storyboard table{width:100%;border-collapse:collapse;font-size:14px}
+.dyadic-storyboard td,.dyadic-storyboard th{padding:12px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.dyadic-storyboard .table-wrap{overflow-x:auto}
+.dyadic-storyboard code{overflow-wrap:anywhere}
+.dyadic-storyboard dialog{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;width:min(460px,calc(100% - 28px));padding:24px}
+.dyadic-storyboard dialog::backdrop{background:#0007}
+.dyadic-storyboard dialog button{margin:8px 8px 0 0}
+.dyadic-storyboard .badge{color:var(--purple);font-size:12px;font-weight:600}
+.dyadic-storyboard .conditional{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+@media(max-width:600px){.dyadic-storyboard .conditional,.dyadic-storyboard .models{grid-template-columns:1fr}
+.dyadic-storyboard .controls label{width:100%}
+.dyadic-storyboard .mast{letter-spacing:.03em}
+.dyadic-storyboard .rail{gap:14px}
+}
+@media(prefers-reduced-motion:no-preference){}
+
+/* Standard Research Log owns the page chrome, font, paper and theme. */
+.dyadic-entry-page { padding-top:48px; }
+.dyadic-entry-page > .back { margin-bottom:32px; }
+.dyadic-storyboard { --bg:var(--paper); --panel:var(--paper); --purple:light-dark(#75609e,#b39bdc); min-width:0; }
+.dyadic-storyboard .storyboard-heading { max-width:900px; padding:0 0 12px; }
+.dyadic-storyboard .storyboard-heading h1 { font-size:clamp(2rem,3.5vw,3rem); line-height:1.15; margin:12px 0 20px; letter-spacing:-.025em; }
+.dyadic-storyboard h2 { font-size:clamp(1.5rem,2.5vw,2rem); line-height:1.25; margin:0 0 12px; }
+.dyadic-storyboard .eyebrow { margin:0 0 12px; }
+.dyadic-storyboard .lead { font-size:1rem; max-width:800px; }
+.dyadic-storyboard .rail { align-items:center; max-width:100%; }
+.dyadic-storyboard .rail a { flex:none; }
+.dyadic-storyboard .storyboard-footer { padding-top:24px; color:var(--muted); font-size:.875rem; }
+.dyadic-storyboard .figure { scroll-margin-top:84px; }
+.dyadic-storyboard .chart text { font-family:inherit; }
+
+/* Keep mathematical glyph fonts despite the shared reading-font reset. */
+.dyadic-storyboard .katex, .dyadic-storyboard .katex * {font-family:KaTeX_Main,serif!important;}
+.dyadic-storyboard .katex .textrm{font-family:KaTeX_Main!important;}
+.dyadic-storyboard .katex .textsf{font-family:KaTeX_SansSerif!important;}
+.dyadic-storyboard .katex .texttt{font-family:KaTeX_Typewriter!important;}
+.dyadic-storyboard .katex .mathnormal{font-family:KaTeX_Math!important;}
+.dyadic-storyboard .katex .mathit{font-family:KaTeX_Main!important;}
+.dyadic-storyboard .katex .mathbf{font-family:KaTeX_Main!important;}
+.dyadic-storyboard .katex .boldsymbol{font-family:KaTeX_Math!important;}
+.dyadic-storyboard .katex .amsrm{font-family:KaTeX_AMS!important;}
+.dyadic-storyboard .katex .mathbb,.dyadic-storyboard .katex .textbb{font-family:KaTeX_AMS!important;}
+.dyadic-storyboard .katex .mathcal{font-family:KaTeX_Caligraphic!important;}
+.dyadic-storyboard .katex .mathfrak,.dyadic-storyboard .katex .textfrak{font-family:KaTeX_Fraktur!important;}
+.dyadic-storyboard .katex .mathboldfrak,.dyadic-storyboard .katex .textboldfrak{font-family:KaTeX_Fraktur!important;}
+.dyadic-storyboard .katex .mathtt{font-family:KaTeX_Typewriter!important;}
+.dyadic-storyboard .katex .mathscr,.dyadic-storyboard .katex .textscr{font-family:KaTeX_Script!important;}
+.dyadic-storyboard .katex .mathsf,.dyadic-storyboard .katex .textsf{font-family:KaTeX_SansSerif!important;}
+.dyadic-storyboard .katex .mathboldsf,.dyadic-storyboard .katex .textboldsf{font-family:KaTeX_SansSerif!important;}
+.dyadic-storyboard .katex .mathsfit,.dyadic-storyboard .katex .mathitsf,.dyadic-storyboard .katex .textitsf{font-family:KaTeX_SansSerif!important;}
+.dyadic-storyboard .katex .mainrm{font-family:KaTeX_Main!important;}
+.dyadic-storyboard .katex .delimsizing.size1{font-family:KaTeX_Size1!important;}
+.dyadic-storyboard .katex .delimsizing.size2{font-family:KaTeX_Size2!important;}
+.dyadic-storyboard .katex .delimsizing.size3{font-family:KaTeX_Size3!important;}
+.dyadic-storyboard .katex .delimsizing.size4{font-family:KaTeX_Size4!important;}
+.dyadic-storyboard .katex .delimsizing.mult .delim-size1 > span{font-family:KaTeX_Size1!important;}
+.dyadic-storyboard .katex .delimsizing.mult .delim-size4 > span{font-family:KaTeX_Size4!important;}
+.dyadic-storyboard .katex .op-symbol.small-op{font-family:KaTeX_Size1!important;}
+.dyadic-storyboard .katex .op-symbol.large-op{font-family:KaTeX_Size2!important;}
+
+.dyadic-storyboard .setup{border-top:1px solid var(--line);padding:28px 0;margin-top:28px;scroll-margin-top:20px}
+.dyadic-storyboard .setup>p{max-width:1050px;font-size:15px}
+.dyadic-storyboard .setup h3{font-size:17px;margin:24px 0 10px}
+.dyadic-storyboard .setup-flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:24px 0}
+.dyadic-storyboard .setup-flow article{border:1px solid var(--line);border-radius:5px;padding:20px;min-width:0}
+.dyadic-storyboard .setup-flow h3{font-size:18px;margin:12px 0}
+.dyadic-storyboard .setup-flow p{font-size:14px;margin:0;color:var(--muted)}
+.dyadic-storyboard .step{font-size:12px;color:var(--accent)}
+.dyadic-storyboard .setup-note{color:var(--muted)}
+.dyadic-storyboard .variable-table table{width:100%;border-collapse:collapse;font-size:14px}
+.dyadic-storyboard .variable-table th,.dyadic-storyboard .variable-table td{text-align:left;vertical-align:top;padding:14px 12px;border-bottom:1px solid var(--line)}
+.dyadic-storyboard .variable-table th:first-child{width:16%}
+.dyadic-storyboard .variable-table th:nth-child(2){width:44%}
+.dyadic-storyboard .setup details p{max-width:1000px;font-size:14px}
+.dyadic-storyboard .formula{overflow-x:auto;padding:10px 0}
+.dyadic-storyboard .setup details{padding-top:14px;border-top:1px solid var(--line)}
+@media(max-width:850px){.dyadic-storyboard .setup-flow{grid-template-columns:1fr}
+.dyadic-storyboard .variable-table table,.dyadic-storyboard .variable-table tbody,.dyadic-storyboard .variable-table tr,.dyadic-storyboard .variable-table td{display:block}
+.dyadic-storyboard .variable-table thead{display:none}
+.dyadic-storyboard .variable-table tr{border-bottom:1px solid var(--line);padding:10px 0}
+.dyadic-storyboard .variable-table td{border:0;padding:4px 0}
+.dyadic-storyboard .variable-table td:first-child{font-weight:bold}
+.dyadic-storyboard .variable-table td:last-child{color:var(--muted)}
+}
+.dyadic-storyboard .method-key{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0}
+.dyadic-storyboard .method-key button{text-align:left;border:0;border-bottom:1px solid var(--line);border-radius:0;padding:12px 0;background:none;display:flex;gap:12px;align-items:center}
+.dyadic-storyboard .method-key small{display:block;color:var(--muted);font-size:12px}
+.dyadic-storyboard .panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.dyadic-storyboard .panel{min-width:0}
+.dyadic-storyboard .panel h3{font-size:16px;min-height:26px;margin:0 0 4px;display:flex;gap:8px;align-items:baseline}
+.dyadic-storyboard .panel .unit{font-size:12px;color:var(--muted);margin:4px 0}
+.dyadic-storyboard .panel svg{width:100%;display:block}
+.dyadic-storyboard .panel svg text{fill:var(--ink);font-size:12px}
+.dyadic-storyboard .panel svg .grid{stroke:var(--line)}
+.dyadic-storyboard .mark{cursor:pointer}
+.dyadic-storyboard .mark:hover,.dyadic-storyboard .mark:focus{stroke:var(--ink);stroke-width:2;outline:none}
+.dyadic-storyboard .dose-axis{text-align:center;font-size:12px;color:var(--muted);margin:0}
+@media(max-width:850px){.dyadic-storyboard .panels{grid-template-columns:1fr}
+.dyadic-storyboard .panel{max-width:650px;width:100%;margin:auto}
+.dyadic-storyboard .method-key{grid-template-columns:1fr;gap:4px}
+.dyadic-storyboard .panel h3{margin-top:14px}
+}
+
+.dyadic-storyboard #legend > span{display:flex;gap:7px;align-items:center}
+.dyadic-storyboard #legend > span::before{display:none}
+.dyadic-storyboard .swatch{display:inline-block;width:15px;height:15px;background-color:#a38aba44;background-image:repeating-linear-gradient(45deg,transparent 0 3px,#81639f 3px 4px);border:1px solid #9477b8}
+.dyadic-storyboard .swatch.s1{background-image:repeating-linear-gradient(-45deg,transparent 0 4px,#81639f 4px 5px)}
+.dyadic-storyboard .swatch.s2{background-image:repeating-linear-gradient(90deg,transparent 0 2px,#81639f 2px 3px)}
+
+.dyadic-storyboard .setup > .setup-disclosure{margin:0;padding:0;border:0}
+.dyadic-storyboard .setup-disclosure > summary{font-size:clamp(1.5rem,2.5vw,2rem);font-weight:600;cursor:pointer;line-height:1.25}
+.dyadic-storyboard .setup-content{padding-top:18px}
+.dyadic-storyboard .timing-axis-label{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin:20px 0 0;font-size:14px}
+.dyadic-storyboard .timing-axis-label strong{white-space:nowrap}
+
+.dyadic-storyboard .timing-legend{display:flex;flex-wrap:wrap;gap:10px 24px;list-style:none;margin:14px 0 4px;padding:0;font-size:14px}
+.dyadic-storyboard .timing-legend li{display:flex;align-items:center;gap:8px}
+.dyadic-storyboard .timing-legend svg{color:var(--purple);flex:none}
+
+.dyadic-storyboard{--real:light-dark(#287c69,#67bda1)}
+.dyadic-storyboard .status-dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px}
+.dyadic-storyboard .status-dot.real{background:var(--real)}.dyadic-storyboard .status-dot.mock{background:var(--purple)}
+.dyadic-storyboard #detail-body{white-space:pre-line;font-size:14px;overflow-wrap:anywhere}
+.dyadic-storyboard dialog{max-height:85vh;overflow:auto}
+.dyadic-storyboard .behavior-key{font-size:12px;border:0;border-bottom:1px solid var(--line);padding:4px 0;background:none;text-align:left}
+.dyadic-storyboard .dose-label{cursor:help;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
+.dyadic-storyboard .dose-label:focus{outline:2px solid var(--real)}
+.dyadic-storyboard .timing-legend svg{color:var(--real)}
+
+/* Compact value readout; full evidence remains available on selection. */
+.dyadic-storyboard .value-tooltip{position:fixed;z-index:20;pointer-events:none;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:6px 9px;box-shadow:0 3px 12px #0002;font:12px/1.4 system-ui;max-width:230px;}
+.dyadic-storyboard .value-tooltip[hidden]{display:none;}
+.dyadic-storyboard .value-tooltip strong{font-size:14px;}
+.dyadic-storyboard .value-tooltip span{color:var(--muted);font-size:11px;}
+.dyadic-storyboard .prevalence-mark{cursor:pointer;}
+.dyadic-storyboard .prevalence-mark:focus{outline:none;}
+.dyadic-storyboard .prevalence-mark:focus .mark,.dyadic-storyboard .prevalence-mark:hover .mark{stroke:var(--ink);stroke-width:1.5;}
+
+
+#behavior-catalogue{position:fixed;right:18px;top:92px;width:244px;max-height:calc(100vh - 116px);overflow-y:auto;z-index:30;background:var(--paper,#f3f0e8);border:1px solid var(--line,#ddd);border-radius:9px;padding:14px;box-shadow:0 5px 20px #00000008;font:12px/1.45 system-ui;color:var(--ink,#17202c)}
+#behavior-catalogue h2{font:600 15px system-ui;margin:0 0 6px}#behavior-catalogue h3{font:600 10px system-ui;text-transform:uppercase;letter-spacing:.06em;color:var(--muted,#666);margin:17px 0 8px}#behavior-catalogue .bc-intro{font-size:11px;color:var(--muted,#666);margin:5px 0 12px}.bc-item{border-top:1px solid var(--line,#ddd)}.bc-item>summary{cursor:pointer;padding:8px 0;font-size:12px;font-weight:500;line-height:1.35}.bc-item>summary:focus-visible{outline:2px solid #395e52;outline-offset:2px}.bc-body p{font-size:12px;line-height:1.5;margin:4px 0 10px}.bc-body .bc-note{color:var(--muted,#666);font-size:11px}.bc-body a{text-decoration:underline;display:inline-block;margin:0 0 10px}.bc-head{display:flex;justify-content:space-between;gap:10px}.bc-head button{border:0;background:none;color:inherit;cursor:pointer;font:12px system-ui}#bc-launcher{display:none;position:fixed;right:18px;top:18px;z-index:41;padding:9px 12px;border:1px solid #aaa;border-radius:7px;background:#f3f0e8;color:#17202c;cursor:pointer}#behavior-catalogue[hidden]{display:none}#bc-launcher:not([hidden]){display:block}#bc-tooltip{position:fixed;z-index:60;max-width:235px;background:#18231e;color:#fff;font:12px/1.45 system-ui;padding:9px 11px;border-radius:6px;pointer-events:none;box-shadow:0 5px 16px #0002}
+@media(min-width:1200px){body.bc-visible .entry-page{width:calc(100% - 340px);max-width:1160px;margin-left:34px;margin-right:290px}}
+@media(max-width:1199px){#behavior-catalogue{top:58px;right:12px;width:min(310px,calc(100vw - 24px));max-height:calc(100vh - 74px);box-shadow:0 12px 40px #0002}}
+
+.behavior-selector{margin:18px 0 22px;padding:14px 0;border-block:1px solid var(--line)}.behavior-selector>strong{font-size:12px}.behavior-select-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:10px 0}.behavior-select-grid label{min-width:0;font-size:11px}.behavior-select-grid select{display:block;width:100%;min-width:0;font-size:12px;padding:9px;margin-top:5px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:5px}#behavior-selection-status{font-size:11px;color:var(--muted);line-height:1.5;margin:0}.bc-selected>summary{color:var(--signal,#395e52);font-weight:700}@media(max-width:760px){.behavior-select-grid{grid-template-columns:1fr}}
+.screening-note{font-size:12px;line-height:1.5;color:var(--muted);max-width:80ch}
+.dyadic-storyboard .bc-item{padding:0;margin:0}

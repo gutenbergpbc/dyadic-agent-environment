@@ -1,0 +1,10 @@
+import katex from './vendor/katex/katex.mjs';
+import {initStoryboard} from './interactions.js';
+import {renderMethodPanels} from './method-panels.js';
+const [markup,data]=await Promise.all(['view.json','results.json'].map(async p=>{const r=await fetch(p);if(!r.ok)throw Error('Missing standalone asset: '+p);return r.json()}));
+if(data.runs.length!==115||data.runs.some(r=>r.status!=='provisional'||r.model!=='glm'||!['urgency','window-buckets'].includes(r.method)||r.events.some(e=>e.mock)))throw Error('Unexpected non-collected data');
+const content=document.createElement('article');content.className='dyadic-storyboard';content.innerHTML=markup.html;document.querySelector('#app').replaceChildren(content);
+content.querySelectorAll('[data-tex]').forEach(n=>katex.render(n.dataset.tex,n,{throwOnError:true}));
+initStoryboard(content,data,()=>{},(model,detail)=>renderMethodPanels(content.querySelector('#method-panels'),data,model,detail,katex));
+document.querySelector('.theme-toggle').onclick=()=>{document.documentElement.dataset.theme=document.documentElement.dataset.theme==='dark'?'light':'dark'};
+if(location.hash)requestAnimationFrame(()=>document.getElementById(location.hash.slice(1))?.scrollIntoView());

@@ -1,0 +1,7 @@
+#!/usr/local/bin/python
+import socket
+import sys
+s=socket.socket(socket.AF_UNIX)
+s.connect('/run/appctl.sock')
+s.sendall((' '.join(sys.argv[1:]) or 'status').encode())
+print(s.recv(4096).decode())
