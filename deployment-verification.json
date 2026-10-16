@@ -1,0 +1,20 @@
+{
+  "production_url": "https://dyadic-agent-environment.pages.dev",
+  "deployment_url": "https://cff62edd.dyadic-agent-environment.pages.dev",
+  "verified_assets": 38,
+  "all_asset_hashes_match_reviewed_manifest": true,
+  "headers": {
+    "content-security-policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; img-src 'self' data:; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'",
+    "referrer-policy": "no-referrer",
+    "x-content-type-options": "nosniff"
+  },
+  "unrelated_routes": {
+    "/code/": 404,
+    "/environments/": 404,
+    "/catalog.js": 404,
+    "/e1/": 404,
+    "/.git/config": 404,
+    "/PROVENANCE.md": 404
+  },
+  "publication_approved": "User explicitly approved separate Cloudflare Pages publication on 2026-10-15"
+}
